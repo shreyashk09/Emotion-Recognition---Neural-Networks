@@ -17,8 +17,22 @@ Human facial expressions can be easily classified into 7 basic emotions: happy, 
 * Trained model Face Detcection -> [haarcascade_frontalface_default.xml](https://github.com/piyush2896/Facial-Expression-Recognition-Challenge/blob/master/face_model.h5)
 * Trained model JSON -> [model1.h5](https://github.com/shreyashk09/Emotion-Recognition---Neural-Networks/blob/master/model1.json)
 
-# Methedology
+# Algorithm
+* Database distribution is something like:
 
+* The data is fed into training_pixels, training_labels, testing_pixels, testing_labels, respectively.
+* The original network starts with an input layer of 48 by 48, matching the size of the input data.
+* Then the processing starts with **2 layered convolutions** followed by an intermediate **maxpolling and dropout**
+* Further in netwrok it undergoes other **2 layered convolutions** followed by an intermediate **maxpolling and dropout**
+* Finally in the network it is **flattened** then **dansed** and **dropout** is executed.
+* Further the data array undergoes final **dense**, activated by **Softmax** and then **compiled**
+* The network is further validated with test data for **16 epoches**.
+* Check points for best results are commited in [chkPt1.h5](https://github.com/shreyashk09/Emotion-Recognition---Neural-Networks/blob/master/chkPt1.h5)
+* Summary of convolution neural networks applied over the database:
+
+* Result after ***16 epoches*** :
+
+* Accuracy Score: 68.68%
 
 # Application in Action
 * To see the applicaion in action, by using pretrained JSON model, run the code [App_Interface](https://github.com/shreyashk09/Emotion-Recognition---Neural-Networks/blob/master/Interface.py)
