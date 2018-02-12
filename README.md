@@ -19,7 +19,9 @@ Human facial expressions can be easily classified into 7 basic emotions: happy, 
 
 # Algorithm
 * Database distribution is something like:
-
+  <div align='center'>
+  <img src='Images/database.png'  width='400px'>
+  </div>
 * The data is fed into training_pixels, training_labels, testing_pixels, testing_labels, respectively.
 * The original network starts with an input layer of 48 by 48, matching the size of the input data.
 * Then the processing starts with **2 layered convolutions** followed by an intermediate **maxpolling and dropout**
@@ -29,12 +31,14 @@ Human facial expressions can be easily classified into 7 basic emotions: happy, 
 * The network is further validated with test data for **16 epoches**.
 * Check points for best results are commited in [chkPt1.h5](https://github.com/shreyashk09/Emotion-Recognition---Neural-Networks/blob/master/chkPt1.h5)
 * Summary of convolution neural networks applied over the database:
-
+  <div align='center'>
+  <img src='Images/summary.png'  width='600px'>
+  </div>
 * Result after ***16 epoches*** :
-
+  <div align='center'>
+  <img src='Images/accuracy.png'  width='1000px'>
+  </div>
 * Accuracy Score: 68.68%
-
 # Application in Action
 * To see the applicaion in action, by using pretrained JSON model, run the code [App_Interface](https://github.com/shreyashk09/Emotion-Recognition---Neural-Networks/blob/master/Interface.py)
 * To train the model using the database and see the results in step by step, run the code blocks in the [Emotion Recognition - Neural Networks-part2.ipynb](https://github.com/shreyashk09/Emotion-Recognition---Neural-Networks)
-
